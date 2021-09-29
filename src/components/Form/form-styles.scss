@@ -1,0 +1,86 @@
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-family: "Roboto", serif;
+
+  label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Roboto", serif;
+      .required{
+        color: #ff004e;
+      }
+  }
+
+  .text-muted{
+    font-size: 10px;
+    color: #ff004e;
+    margin-top: 5px;
+  }
+
+  > input, textarea {
+    border: 1px solid #cccccc;
+    min-height: 36px;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-family: "Roboto", serif;
+    &::placeholder {
+      font-size: 14px;
+      font-family: "Roboto", serif;
+    }
+
+    &:active, &:focus{
+      outline: 2px #4282C3 solid;
+      border: 1px solid transparent !important;
+    }
+
+    &.error{
+      border: 1px solid #ff004e !important;
+    }
+  }
+
+  textarea {
+    padding:  10px;
+    font-family: "Roboto", serif;
+  }
+
+  .list-group{
+    display: flex;
+    flex-direction: row;
+
+    > div:first-child{
+      border-radius: 4px 0 0 4px;
+      border-right: 0 ;
+    }
+
+    > div:last-child{
+      border-radius: 0 4px 4px 0;
+    }
+
+    > div{
+      width: 100%;
+      text-align: center;
+      display: flex;
+      border: 1px solid #cccccc;
+      min-height: 36px;
+      cursor: pointer;
+      span{
+        margin: auto;
+      }
+      &.active, &:hover{
+        color: #084298;
+        background-color: #cfe2ff;
+        border-color: #b6d4fe;
+      }
+    }
+  }
+
+  .form-dropdown__placeholder{
+    font-size: 14px;
+    font-family: "Roboto", serif;
+  }
+
+}
